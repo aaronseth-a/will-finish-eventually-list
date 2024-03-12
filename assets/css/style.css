@@ -9,8 +9,22 @@ body {
 
 .task-card {
   margin: 0 auto;
+  z-index: 99999;
 }
 
 .task-card:hover {
   cursor: grab;
+}
+
+.ui-droppable{
+  min-height: 60vh;
+  /*border: solid blue 5px;*/
+}
+
+.ui-droppable-active{
+  /* border:solid green 5px; */
+}
+
+.ui-droppable-hover{
+  /* border: solid yellow 5px; */
 }

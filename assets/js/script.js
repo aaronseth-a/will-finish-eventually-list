@@ -2,6 +2,18 @@
 let taskList = JSON.parse(localStorage.getItem("tasks"));
 let nextId = JSON.parse(localStorage.getItem("nextId"));
 
+$(function(){
+    $('#todo-cards').droppable({
+        tolerance: 'intersect'
+    });
+    $('#in-progress-cards').droppable({
+        tolerance: 'intersect'
+    });
+    $('#done-cards').droppable({
+        tolerance: 'intersect'
+    });
+});
+
 // Todo: create a function to generate a unique task id
 function generateTaskId() {
 
@@ -9,6 +21,22 @@ function generateTaskId() {
 
 // Todo: create a function to create a task card
 function createTaskCard(task) {
+   let cardText = $('<div>');
+   cardText.addClass('task-card');
+   cardText.addClass('card');
+   let randomText = $('<h2>');
+   randomText.text('TESTING 1');
+   cardText.append(randomText);
+   cardText.draggable({revert: 'invalid', snap: ".ui-droppable", snapMode:'inner', snapTolerance: 170});
+   $('#todo-cards').append(cardText);
+   cardText = $('<div>');
+   cardText.addClass('task-card');
+   cardText.addClass('card');
+   randomText = $('<h2>');
+   randomText.text('TESTING 2');
+   cardText.append(randomText);
+   cardText.draggable({revert: 'invalid', snap: ".ui-droppable", snapMode:'inner', snapTolerance: 170});
+   $('#todo-cards').append(cardText);
 
 }
 
@@ -36,3 +64,7 @@ function handleDrop(event, ui) {
 $(document).ready(function () {
 
 });
+
+
+
+createTaskCard();
