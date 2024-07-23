@@ -7,24 +7,42 @@ body {
   min-height: 60vh;
 }
 
-.task-card {
+.taskCard{
+  position: relative;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* .task-card {
   margin: 0 auto;
   z-index: 99999;
 }
 
 .task-card:hover {
   cursor: grab;
-}
+} */
 
-.ui-droppable{
+/* .ui-droppable{
   min-height: 60vh;
-  /*border: solid blue 5px;*/
+  border: solid blue 5px;
 }
 
 .ui-droppable-active{
-  /* border:solid green 5px; */
+  border:solid green 5px;
 }
 
 .ui-droppable-hover{
-  /* border: solid yellow 5px; */
+  border: solid yellow 5px;
+} */
+
+.red{
+  background-color: red;
+}
+.yellow{
+  background-color: yellow;
+}
+.white{
+  background-color: white;
 }
