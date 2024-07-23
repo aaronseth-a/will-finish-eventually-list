@@ -44,6 +44,10 @@
                 <label for="description-text" class="col-form-label">Message:</label>
                 <textarea class="form-control" id="description-text"></textarea>
               </div>
+              <div class="form-group">
+                <label for="date" class="col-form-label">Date: </label>
+                <input type="text" class="form-control" id="datepicker" />
+              </div>
            
             </div>
             <div class="modal-footer">
@@ -58,32 +62,32 @@
     <!-- END MODAL -->
     <div class="row swim-lanes text-center justify-content-between">
       <div class="col-12 col-lg-4 d-flex">
-        <div id="to-do" class="card border-light mb-3 lane flex-grow-1">
+        <div id="to-do" class="card border-light mb-3  flex-grow-1">
           <div class="card-header bg-white">
             <h2 class="card-title mb-1">To Do</h2>
           </div>
-          <div class="card-body bg-light">
-            <div id="todo-cards"></div>
+          <div id="todo-cards" class="card-body bg-light lane">
+            <!-- <div id="todo-cards"></div> -->
           </div>
         </div>
       </div>
       <div class="col-12 col-lg-4 d-flex">
-        <div id="in-progress" class="card border-light mb-3 lane flex-grow-1">
+        <div id="in-progress" class="card border-light mb-3  flex-grow-1">
           <div class="card-header bg-white">
             <h2 class="card-title mb-1">In Progress</h2>
           </div>
-          <div class="card-body bg-light">
-            <div id="in-progress-cards"></div>
+          <div id="in-progress-cards" class="card-body bg-light lane">
+            <!-- <div id="in-progress-cards"></div> -->
           </div>
         </div>
       </div>
       <div class="col-12 col-lg-4 d-flex">
-        <div id="done" class="card border-light mb-3 lane flex-grow-1">
+        <div id="done" class="card border-light mb-3 flex-grow-1">
           <div class="card-header bg-white">
             <h2 class="card-title mb-1">Done</h2>
           </div>
-          <div class="card-body bg-light">
-            <div id="done-cards"></div>
+          <div id="done-cards" class="card-body bg-light lane">
+            <!-- <div id="done-cards"></div> -->
           </div>
         </div>
       </div>
