@@ -2,11 +2,11 @@
 
 ## DESCRIPTION
 
-This is a simple task list to help you stay on track. It will sta around even if you close your browser and come back. 
+This is a simple task list to help you stay on track. It will stay around even if you close your browser and come back. 
 
 ## INSTALLATION
 
-Nothing to install. Just go to the site: 
+Nothing to install. Just go to the site: <a href="https://aaronseth-a.github.io/will-finish-eventually-list/">https://aaronseth-a.github.io/will-finish-eventually-list/</a> 
 
 ## USAGE
 <img style="width: 480px" src="./assets/images/screenshot.png">
